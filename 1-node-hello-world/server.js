@@ -7,6 +7,7 @@ const port = 3000;
 const server = createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader("Content-Type", "text/plain");
+  ///res.writeHead(200, { "Content-Type": "text/plain" }); // this does the same
   res.end("Hello World");
 });
 
